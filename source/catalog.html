@@ -25,7 +25,9 @@
     </nav>
   </header>
 <main class="main">
-  <h1 class="main__title">Каталог продукции</h1>
+<!--   Блок «Каталог продукции» -->
+  <section class="main__catalog-list">
+  <h1 class="main__page-title">Каталог продукции</h1>
   <ul class="main-offer">
     <li class="main-offer__item">
       <div class="main-offer__item-wrapper">
@@ -197,7 +199,67 @@
       <a class="main-offer__button main-offer__button--show-all" aria-label="Кнопка просмотра всего каталога" href="#">Показать все</a>
     </li>
   </ul>
+  </section>
+  <!--  Блок «Дополнительные товары»-->
+  <section class="extra-offer">
+    <h2 class="extra-offer__title">Дополнительные товары</h2>
+    <div class="extra-offer__line"></div>     <!--  Декоративную линию предполагаю делать дивом-->
+    <ul class="extra-offer__items-list">
+      <li class="extra-offer__item">
+        <div class="extra-offer__item-wrapper">
+          <h3 class="extra-offer__item-title">Сахарозаменитель</h3>
+          <tr>
+            <th>1 упаковка (100 г)</th>
+            <td>200 Р.</td>
+          </tr>
+        </div>
+        <a class="main-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      </li>
+      <li class="extra-offer__item">
+        <h3 class="extra-offer__item-title">Питьевая вода</h3>
+        <tr>
+          <th>5 литров</th>
+          <td>50 Р.</td>
+        </tr>
+        </div>
+        <a class="main-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      </li>
+      <li class="extra-offer__item">
+        <h3 class="extra-offer__item-title">Молоко</h3>
+        <tr>
+          <th>1 литр</th>
+          <td>100 Р.</td>
+        </tr>
+        </div>
+        <a class="main-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      </li>
+      <li class="extra-offer__item">
+        <h3 class="extra-offer__item-title">Витамины</h3>
+        <tr>
+          <th>1 упаковка (30 г)</th>
+          <td>300 Р.</td>
+        </tr>
+        </div>
+        <a class="main-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      </li>
+    </ul>
+  </section>
+  <!--  Блок «Чехол в подарок». Для section потом применю бэкграунд-->
+  <section class="gift-block">
+      <img class="gift-block__img" src="https://via.placeholder.com/56x61" alt="Подарок" width="56" height="61">
+      <p class="gift-block__text">Закажите все и получите чехол для кота в подарок!</p>
+  </section>
+  <!--    Блок  карта-->
+  <section class="main-map">
+    <div class="main-map__wrapper">
+      <span>Приглашаем к сотрудничеству дилеров!</span>
+      <span>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+      <iframe src=""></iframe>
+      <img class="main-map__anchor" src="https://via.placeholder.com/55x53" alt="Якорь на карте">
+    </div>
+  </section>
 </main>
+  <!--    Футер-->
 <footer>
   <div class="footer__logo-wrapper">
     <img src="https://via.placeholder.com/128x24" alt="Логотип cat energy" width="128" height="24">

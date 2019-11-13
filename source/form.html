@@ -23,7 +23,7 @@
     </div>
   </nav>
 </header>
-<main>
+<main class="main">
   <h1 class="main__page-title">Подбор программы</h1>
   <form class="form-offer" method="get"
         action="https://echo.htmlacademy.ru">
@@ -32,21 +32,21 @@
     <ul class="form-offer__input-list">
       <li class="form-offer__input-item">
       <label class="form-offer__label" for="input-name">Имя:<sup>*</sup></label>
-      <input class="form-offer_input" id="input-name" type="text" name="input-name" placeholder="Барсик">
+      <input class="form-offer__input" id="input-name" type="text" name="input-name" placeholder="Барсик">
       </li>
       <li class="form-offer__input-item">
       <label class="form-offer__label" for="input-weight">Вес (кг):<sup>*</sup></label>
-      <input class="form-offer_input" id="input-weight" type="number" name="input-weight" placeholder="7">
+      <input class="form-offer__input" id="input-weight" type="number" name="input-weight" placeholder="7">
       </li>
         <li class="form-offer__input-item">
       <label class="form-offer__label" for="input-age">Возраст (лет):</label>
-      <input class="form-offer_input" id="input-age" type="number" name="input-age" placeholder="7">
+      <input class="form-offer__input" id="input-age" type="number" name="input-age" placeholder="7">
         </li>
     </ul>
     <!--       Блок «Похудение-масса-совет»-->
     <fieldset class="form-offer__checkboxes">
       <ul class="form-offer__radio-list">
-        <li class="form-offer_radio-item">
+        <li class="form-offer__radio-item">
           <input class="visually-hidden" type="radio" name="diet" id="diet" checked>
           <label class="form-offer__label" for="diet">
             <img class="form-offer__img" src="https://via.placeholder.com/30x30" alt="radio-off" width=30 height="30">
@@ -79,11 +79,11 @@
       <ul class="form-offer__contact-list">  <!--  Декоративную линию предполагаю делать дивом-->
         <li class="form-offer__contact-item">
           <label class="form-offer__label" for="input-email">E-mail:<sup>*</sup></label> <!-- Иконки бэкграундом в CSS добавлю-->
-          <input class="form-offer_input" id="input-email" type="email" name="input-email" placeholder="kuklachev@gmail.com">
+          <input class="form-offer__input" id="input-email" type="email" name="input-email" placeholder="kuklachev@gmail.com">
         </li>
         <li class="form-offer__contact-item">
           <label class="form-offer__label" for="input-email">Телефон:<sup>*</sup></label>
-          <input class="form-offer_input" id="input-phone" type="tel" name="input-phone" placeholder="8(960)900-60-90">
+          <input class="form-offer__input" id="input-phone" type="tel" name="input-phone" placeholder="8(960)900-60-90">
         </li>
       </ul>
     </fieldset>
@@ -137,14 +137,14 @@
   <!--    Блок  карта-->
   <section class="main-map">
     <div class="main-map__wrapper">
-      <span>Приглашаем к сотрудничеству дилеров!</span>
-      <span>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+      <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <span class="main-map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
       <iframe src=""></iframe>
       <img class="main-map__anchor" src="https://via.placeholder.com/55x53" alt="Якорь на карте">
     </div>
   </section>
 </main>
-<footer>
+<footer class="footer">
   <div class="footer__logo-wrapper">
     <img src="https://via.placeholder.com/128x24" alt="Логотип cat energy" width="128" height="24">
   </div>

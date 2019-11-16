@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Кэт энерджи: Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet">
-
 </head>
 <body>
   <header class="main-header">
@@ -16,7 +15,7 @@
         <img src="https://via.placeholder.com/25x19" alt="Меню-бургер" width="25" height="19">
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main_nav__list site-list">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item"><a href="index.html" aria-label="Cсылка на Главную">Главная</a></li>
           <li class="site-list__item"><a href="catalog.html" aria-label="Cсылка на Каталог продукции">Каталог продукции</a></li>
           <li class="site-list__item"><a href="form.html" aria-label="Cсылка на страницу подборп программ">Подбор программы</a></li>
@@ -25,7 +24,10 @@
     </nav>
   </header>
 <main class="main">
-  <h1 class="main__title">Каталог продукции</h1>
+
+<!--   Блок «Каталог продукции» -->
+  <section class="main__catalog-list">
+  <h1 class="main__page-title">Каталог продукции</h1>
   <ul class="main-offer">
     <li class="main-offer__item">
       <div class="main-offer__item-wrapper">
@@ -197,8 +199,69 @@
       <a class="main-offer__button main-offer__button--show-all" aria-label="Кнопка просмотра всего каталога" href="#">Показать все</a>
     </li>
   </ul>
+  </section>
+
+  <!--  Блок «Дополнительные товары»-->
+  <section class="extra-offer">
+    <h2 class="extra-offer__title">Дополнительные товары</h2>
+    <div class="extra-offer__line"></div>     <!--  Декоративную линию предполагаю делать дивом-->
+    <ul class="extra-offer__items-list">
+      <li class="extra-offer__item">
+        <div class="extra-offer__item-wrapper">
+          <h3 class="extra-offer__item-title">Сахарозаменитель</h3>
+          <div class="extra-offer__wrapper-price">
+            <span class="extra-offer__item-name">1 упаковка (100 г)</span>
+            <span class="extra-offer__item-price">200 Р.</span>
+          </div>
+        </div>
+        <a class="extra-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      </li>
+      <li class="extra-offer__item">
+        <h3 class="extra-offer__item-title">Питьевая вода</h3>
+        <div class="extra-offer__wrapper-price">
+          <span class="extra-offer__item-name">5 литров</span>
+          <span class="extra-offer__item-price">50 Р.</span>
+        </div>
+        <a class="extra-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      </li>
+      <li class="extra-offer__item">
+        <h3 class="extra-offer__item-title">Молоко</h3>
+        <div class="extra-offer__wrapper-price">
+          <span class="extra-offer__item-name">1 литр</span>
+          <span class="extra-offer__item-price">100 Р.</span>
+        </div>
+        <a class="extra-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      </li>
+      <li class="extra-offer__item">
+        <h3 class="extra-offer__item-title">Витамины</h3>
+        <div class="extra-offer__wrapper-price">
+          <span class="extra-offer__item-name">1 упаковка (30 г)</span>
+          <span class="extra-offer__item-price">300 Р.</span>
+        </div>
+        <a class="extra-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      </li>
+    </ul>
+  </section>
+
+  <!--  Блок «Чехол в подарок». Для section потом применю бэкграунд-->
+  <section class="gift-block">
+      <img class="gift-block__img" src="https://via.placeholder.com/56x61" alt="Подарок" width="56" height="61">
+      <p class="gift-block__text">Закажите все и получите чехол для кота в подарок!</p>
+  </section>
+
+  <!--    Блок  карта-->
+  <section class="main-map">
+    <div class="main-map__wrapper">
+      <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <span class="main-map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+      <iframe src=""></iframe>
+      <img class="main-map__anchor" src="https://via.placeholder.com/55x53" alt="Якорь на карте">
+    </div>
+  </section>
 </main>
-<footer>
+
+  <!--    Футер-->
+<footer class="footer">
   <div class="footer__logo-wrapper">
     <img src="https://via.placeholder.com/128x24" alt="Логотип cat energy" width="128" height="24">
   </div>

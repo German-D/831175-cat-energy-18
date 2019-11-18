@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <title>Кэт энерджи: Подбор программы</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="main-header">
+<header class="container main-header">
   <a href="index.html" class="main-header__logo">
-    <img src="https://via.placeholder.com/191x39" alt="Логотип" width="191" height="39">
+    <img src="img/logo-mobile.svg" alt="Логотип" width="191" height="39">
   </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">
-      <img src="https://via.placeholder.com/25x19" alt="Меню-бургер" width="25" height="19">
-    </button>
+  <button class="main-nav__toggle" type="button">
+    <img class="visually-hidden" src="img/icon-mobile-menu.svg" alt="Меню-бургер" width="25" height="19">
+    <img src="img/icon-close.svg" alt="Закрыть" width="16" height="16">
+  </button>
+  <nav class="container main-nav">
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a href="index.html" aria-label="Ссылка на Главную">Главная</a></li>
-        <li class="site-list__item"><a href="catalog.html" aria-label="Ссылка на Каталог продукции">Каталог продукции</a></li>
-        <li class="site-list__item"><a href="form.html" aria-label="Ссылка на страницу подборп программ">Подбор программы</a></li>
+        <li class="site-list__item"><a href="#" aria-label="Ссылка на Каталог продукции">Каталог продукции</a></li>
+        <li class="site-list__item"><a href="form.html" aria-label="Ссылка на страницу подбора программ">Подбор программы</a></li>
       </ul>
     </div>
   </nav>
 </header>
-<main class="main">
-  <h1 class="main__page-title">Подбор программы</h1>
-  <form class="form-offer" method="get"
+<main class="main-form">
+  <h1 class="container main-form__page-title">Подбор программы</h1>
+  <form class="container form-offer" method="get"
         action="https://echo.htmlacademy.ru">
     <h2 class="form-offer__title">Заполните анкету и мы подберем программу питания для вашего кота</h2>
 
@@ -33,7 +35,7 @@
     <ul class="form-offer__input-list">
       <li class="form-offer__input-item">
       <label class="form-offer__label" for="input-name">Имя:<sup>*</sup></label>
-      <input class="form-offer__input" id="input-name" type="text" name="input-name" placeholder="Барсик">
+      <input class="form-offer__input" id="input-name" type="text" name="input-name" placeholder="БАРСИК">
       </li>
       <li class="form-offer__input-item">
       <label class="form-offer__label" for="input-weight">Вес (кг):<sup>*</sup></label>
@@ -50,25 +52,25 @@
       <ul class="form-offer__radio-list">
         <li class="form-offer__radio-item">
           <input class="visually-hidden" type="radio" name="diet" id="diet" checked>
-          <label class="form-offer__label" for="diet">
-            <img class="form-offer__img" src="https://via.placeholder.com/30x30" alt="radio-off" width=30 height="30">
-            <img class="form-offer__img--on visually-hidden" src="https://via.placeholder.com/30x30" alt="radio-off" width="30" height="30">
+          <label class="form-offer__label-radio" for="diet">
+            <div class="form-offer__img visually-hidden"></div>
+            <div class="form-offer__img"><div class="form-offer__img--on"></div></div>
             <span class="form-offer__text">Похудение</span>
           </label>
         </li>
         <li class="form-offer__radio-item">
           <input class="visually-hidden" type="radio" name="mass" id="mass">
-          <label class="form-offer__label" for="mass">
-            <img class="form-offer__img" src="https://via.placeholder.com/30x30" alt="radio-off" width=30 height="30">
-            <img class="form-offer__img--on visually-hidden" src="https://via.placeholder.com/30x30" alt="radio-off" width="30" height="30">
+          <label class="form-offer__label-radio" for="mass">
+            <div class="form-offer__img"></div>
+            <div class="form-offer__img--on visually-hidden"></div>
             <span class="form-offer__text">Набор массы</span>
           </label>
         </li>
         <li class="form-offer__radio-item">
           <input class="visually-hidden" type="radio" name="advice" id="advice">
-          <label class="form-offer__label" for="advice">
-            <img class="form-offer__radio" src="https://via.placeholder.com/30x30" alt="radio-off" width=30 height="30">
-            <img class="form-offer__radio--on visually-hidden" src="https://via.placeholder.com/30x30" alt="radio-off" width="30" height="30">
+          <label class="form-offer__label-radio" for="advice"></div>
+            <div class="form-offer__img"></div>
+            <div class="form-offer__img--on visually-hidden"></div>
             <span class="form-offer__text">Не знаю (Нужен ваш совет)</span>
           </label>
         </li>
@@ -95,73 +97,76 @@
     <fieldset class="form-offer__comments">
       <legend class="form-offer__legend">Комментарий</legend>
       <div class="form-offer__line"></div>  <!--  Декоративную линию предполагаю делать дивом-->
-      <textarea class="form-offer__textarea" name="text" id="comments" cols="50" rows="25" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <textarea class="form-offer__textarea" name="text" id="comments" cols="35" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
     </fieldset>
 
     <!--       Блок «Дополнительно»-->
-<fieldset class="form-offer__additional">
+<fieldset class="container form-offer__additional">
   <legend class="form-offer__legend">Дополнительно</legend>
   <ul class="form-offer__checkboxes-list">
     <li class="form-offer__checkbox-item">
       <input class="visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
-      <label class="form-offer__label" for="sugar">
-        <img class="form-offer__checkbox-img" src="https://via.placeholder.com/30x30" alt="checkbox-off" width="30" height="30">
-        <img class="form-offer__checkbox-img--on visually-hidden" src="https://via.placeholder.com/30x30" alt="checkbox-off" width="30" height="30">
-        <span class="label-text">Сахарозаменитель</span>
+      <label class="form-offer__label-checkbox" for="sugar">
+        <div class="form-offer__checkbox-img visually-hidden"></div>
+        <div class="form-offer__checkbox-img form-offer__checkbox-img--on"><img class="form-offer__checkbox-on-img" src="img/icon-tick.svg" alt="Галочка" width="16" height="16"></div>
+        <span class="form-offer__label-text">Сахарозаменитель</span>
       </label>
     </li>
     <li class="form-offer__checkbox-item">
       <input class="visually-hidden" type="checkbox" name="water" id="water">
-      <label class="form-offer__label" for="water">
-        <img class="form-offer__checkbox-img" src="https://via.placeholder.com/30x30" alt="checkbox-off" width="30" height="30">
-        <img class="form-offer__checkbox-img--on visually-hidden" src="https://via.placeholder.com/30x30" alt="checkbox-off" width="30" height="30">
-        <span class="label-text">Питьевая вода</span>
+      <label class="form-offer__label-checkbox" for="water">
+        <div class="form-offer__checkbox-img"></div>
+        <div class="form-offer__checkbox-img--on visually-hidden"></div>
+        <span class="form-offer__label-text">Питьевая вода</span>
       </label>
     </li>
     <li class="form-offer__checkbox-item">
       <input class="visually-hidden" type="checkbox" name="milk" id="milk">
-      <label class="form-offer__label" for="milk">
-        <img class="form-offer__checkbox-img" src="https://via.placeholder.com/30x30" alt="checkbox-off" width="30" height="30">
-        <img class="form-offer__checkbox-img--on visually-hidden" src="https://via.placeholder.com/30x30" alt="checkbox-off" width="30" height="30">
-        <span class="label-text">Молоко</span>
+      <label class="form-offer__label-checkbox" for="milk">
+        <div class="form-offer__checkbox-img"></div>
+        <div class="form-offer__checkbox-img--on visually-hidden"></div>
+        <span class="form-offer__label-text">Молоко</span>
       </label>
     </li>
     <li class="form-offer__checkbox-item">
       <input class="visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-      <label class="form-offer__label" for="vitamins">
-        <img class="form-offer__checkbox-img" src="https://via.placeholder.com/30x30" alt="checkbox-off" width="30" height="30">
-        <img class="form-offer__checkbox-img--on visually-hidden" src="https://via.placeholder.com/30x30" alt="checkbox-off" width="30" height="30">
-        <span class="label-text">Витамины</span>
+      <label class="form-offer__label-checkbox" for="vitamins">
+        <div class="form-offer__checkbox-img"></div>
+        <div class="form-offer__checkbox-img--on visually-hidden"></div>
+        <span class="form-offer__label-text">Витамины</span>
       </label>
     </li>
   </ul>
 </fieldset>
     <a class="main-offer__button" aria-label="Кнопка заказа" href="#">Отправить заявку</a>
-    <p><sup>*</sup> — Обязательные поля</p>
+    <p class="main-offer__required"><sup>*</sup> — Обязательные поля</p>
   </form>
 
   <!--    Блок  карта-->
   <section class="main-map">
-    <div class="main-map__wrapper">
-      <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <span class="main-map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
-      <iframe src=""></iframe>
-      <img class="main-map__anchor" src="https://via.placeholder.com/55x53" alt="Якорь на карте">
+    <div class="main-map__wrapper main-map__wrapper--catalog">
+      <div class="container main-map__wrapper-text">
+        <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="main-map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+    </div>
+    <div class="main-map__map-img">
+      <img class="main-map__anchor" src="img/map-pin.png" alt="Якорь на карте" width="55" height="53">
     </div>
   </section>
 </main>
+
+<!--    Футер-->
 <footer class="footer">
-  <div class="footer__logo-wrapper">
-    <img src="https://via.placeholder.com/128x24" alt="Логотип cat energy" width="128" height="24">
-  </div>
-  <ul class="footer__social-list">
-    <li class="footer__social-item"><a href="#"><img src="https://via.placeholder.com/22x12" alt="Логотип Вконтакте" width="22" height="12"></a></li>
-    <li class="footer__social-item"><a href="#"><img src="https://via.placeholder.com/17x17" alt="Логотиа Инстаграм" width="17" height="17"></a></li>
-    <li class="footer__social-item"><a href="#"><img src="https://via.placeholder.com/10x19" alt="Логотип Facebook" width="10" height="19"></a></li>
+  <img class="container footer__logo" src="img/logo-footer.svg" alt="Логотип cat energy" width="128" height="24">
+  <ul class="container footer__social-list">
+    <li class="footer__social-item"><a href="#"><img src="img/icon-vk.svg" alt="Логотип Вконтакте" width="22" height="12"></a></li>
+    <li class="footer__social-item"><a href="#"><img src="img/icon-insta.svg" alt="Логотиа Инстаграм" width="23" height="23"></a></li>
+    <li class="footer__social-item"><a href="#"><img src="img/icon-fb.svg" alt="Логотип Facebook" width="10" height="19"></a></li>
   </ul>
-  <div class="footer__author">
-    <span class="footer__author-text"></span>
-    <img class="footer__author-logo" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" width="27" height="34">
+  <div class="container footer__author">
+    <p class="footer__author-text">HTML Academy</p>
+    <img class="footer__author-logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
   </div>
 </footer>
 </body>

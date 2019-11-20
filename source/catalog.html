@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Кэт энерджи: Каталог</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="main-header">
-    <a href="index.html" class="main-header__logo">
-      <img src="https://via.placeholder.com/191x39" alt="Логотип" width="191" height="39">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <img src="https://via.placeholder.com/25x19" alt="Меню-бургер" width="25" height="19">
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html" aria-label="Cсылка на Главную">Главная</a></li>
-          <li class="site-list__item"><a href="catalog.html" aria-label="Cсылка на Каталог продукции">Каталог продукции</a></li>
-          <li class="site-list__item"><a href="form.html" aria-label="Cсылка на страницу подборп программ">Подбор программы</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+<header class="container main-header">
+  <a href="index.html" class="main-header__logo">
+    <img src="img/logo-mobile.svg" alt="Логотип" width="191" height="39">
+  </a>
+  <button class="main-nav__toggle" type="button">
+    <img class="visually-hidden" src="img/icon-mobile-menu.svg" alt="Меню-бургер" width="25" height="19">
+    <img src="img/icon-close.svg" alt="Закрыть" width="16" height="16">
+  </button>
+  <nav class="container main-nav">
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a href="index.html" aria-label="Ссылка на Главную">Главная</a></li>
+        <li class="site-list__item"><a href="#" aria-label="Ссылка на Каталог продукции">Каталог продукции</a></li>
+        <li class="site-list__item"><a href="form.html" aria-label="Ссылка на страницу подбора программ">Подбор программы</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 <main class="main">
 
 <!--   Блок «Каталог продукции» -->
-  <section class="main__catalog-list">
-  <h1 class="main__page-title">Каталог продукции</h1>
-  <ul class="main-offer">
-    <li class="main-offer__item">
-      <div class="main-offer__item-wrapper">
-        <a class="main-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="https://via.placeholder.com/140x144" alt="cat energy" width="140" height="144"></a>
-        <div class="main-offer__item-info">
-          <a href="#" class="main-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy PRO 500 г</a>
-          <table class="main-offer__title-structure">
+  <section class="container catalog-offer">
+  <h1 class="catalog-offer__title">Каталог продукции</h1>
+  <ul class="catalog-offer__list">
+    <li class="catalog-offer__item">
+      <div class="catalog-offer__item-wrapper">
+        <a class="catalog-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="img/chicken-small-mobile@1x.jpg" alt="cat energy" width="140" height="144"></a>
+        <div class="catalog-offer__item-info">
+          <a href="#" class="catalog-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy PRO 500 г</a>
+          <table class="catalog-offer__title-structure">
             <tr>
               <th>Объем</th>
               <td>500 г</td>
@@ -50,14 +51,14 @@
           </table>
         </div>
       </div>
-      <a class="main-offer__button" aria-label="Кнопка заказа" href="#">заказать</a>
+      <a class="catalog-offer__button" aria-label="Кнопка заказа" href="#">заказать</a>
     </li>
-    <li class="main-offer__item">
-      <div class="main-offer__item-wrapper">
-        <a class="main-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="https://via.placeholder.com/140x144" alt="cat energy" width="140" height="144"></a>
-        <div class="main-offer__item-info">
-          <a href="#" class="main-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy PRO 1000 г</a>
-          <table class="main-offer__title-structure">
+    <li class="catalog-offer__item">
+      <div class="catalog-offer__item-wrapper">
+        <a class="catalog-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="img/chicken-big-mobile@1x.jpg" alt="cat energy" width="140" height="144"></a>
+        <div class="catalog-offer__item-info">
+          <a href="#" class="catalog-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy PRO 1000 г</a>
+          <table class="catalog-offer__title-structure">
             <tr>
               <th>Объем</th>
               <td>1000 г</td>
@@ -73,14 +74,14 @@
           </table>
         </div>
       </div>
-      <a class="main-offer__button" aria-label="Кнопка заказа" href="#"> Заказать</a>
+      <a class="catalog-offer__button" aria-label="Кнопка заказа" href="#"> Заказать</a>
     </li>
-    <li class="main-offer__item">
-      <div class="main-offer__item-wrapper">
-        <a class="main-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="https://via.placeholder.com/140x144" alt="cat energy" width="140" height="144"></a>
-        <div class="main-offer__item-info">
-          <a href="#" class="main-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy PRO 500 г</a>
-          <table class="main-offer__title-structure">
+    <li class="catalog-offer__item">
+      <div class="catalog-offer__item-wrapper">
+        <a class="catalog-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="img/fish-small-mobile@1x.jpg" alt="cat energy" width="140" height="144"></a>
+        <div class="catalog-offer__item-info">
+          <a href="#" class="catalog-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy PRO 500 г</a>
+          <table class="catalog-offer__title-structure">
             <tr>
               <th>Объем</th>
               <td>500 г</td>
@@ -96,14 +97,14 @@
           </table>
         </div>
       </div>
-      <a class="main-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      <a class="catalog-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
     </li>
-    <li class="main-offer__item">
-      <div class="main-offer__item-wrapper">
-        <a class="main-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="https://via.placeholder.com/140x144" alt="cat energy" width="140" height="144"></a>
-        <div class="main-offer__item-info">
-          <a href="#" class="main-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy PRO 1000 г</a>
-          <table class="main-offer__title-structure">
+    <li class="catalog-offer__item">
+      <div class="catalog-offer__item-wrapper">
+        <a class="catalog-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="img/fish-small-mobile@1x.jpg" alt="cat energy" width="140" height="144"></a>
+        <div class="catalog-offer__item-info">
+          <a href="#" class="catalog-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy PRO 1000 г</a>
+          <table class="catalog-offer__title-structure">
             <tr>
               <th>Объем</th>
               <td>1000 г</td>
@@ -119,14 +120,14 @@
           </table>
         </div>
       </div>
-      <a class="main-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      <a class="catalog-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
     </li>
-    <li class="main-offer__item">
-      <div class="main-offer__item-wrapper">
-        <a class="main-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="https://via.placeholder.com/140x144" alt="cat energy" width="140" height="144"></a>
-        <div class="main-offer__item-info">
-          <a href="#" class="main-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy Slim 500 г</a>
-          <table class="main-offer__title-structure">
+    <li class="catalog-offer__item">
+      <div class="catalog-offer__item-wrapper">
+        <a class="catalog-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="img/buckwheat-small-mobile@1x.jpg" alt="cat energy" width="140" height="144"></a>
+        <div class="catalog-offer__item-info">
+          <a href="#" class="catalog-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy Slim 500 г</a>
+          <table class="catalog-offer__title-structure">
             <tr>
               <th>Объем</th>
               <td>500 г</td>
@@ -142,21 +143,21 @@
           </table>
         </div>
       </div>
-      <a class="main-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      <a class="catalog-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
     </li>
-    <li class="main-offer__item">
-      <div class="main-offer__item-wrapper">
-        <a class="main-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="https://via.placeholder.com/140x144" alt="cat energy" width="140" height="144"></a>
-        <div class="main-offer__item-info">
-          <a href="#" class="main-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy Slim 1000 г</a>
-          <table class="main-offer__title-structure">
+    <li class="catalog-offer__item">
+      <div class="catalog-offer__item-wrapper">
+        <a class="catalog-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="img/buckwheat-big-mobile@1x.jpg" alt="cat energy" width="140" height="144"></a>
+        <div class="catalog-offer__item-info">
+          <a href="#" class="catalog-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy Slim 1000 г</a>
+          <table class="catalog-offer__title-structure">
             <tr>
               <th>Объем</th>
               <td>1000 г</td>
             </tr>
             <tr>
               <th>Вкус</th>
-              <td>Греска</td>
+              <td>Гречка</td>
             </tr>
             <tr>
               <th>Цена</th>
@@ -165,14 +166,14 @@
           </table>
         </div>
       </div>
-      <a class="main-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      <a class="catalog-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
     </li>
-    <li class="main-offer__item">
-      <div class="main-offer__item-wrapper">
-        <a class="main-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="https://via.placeholder.com/140x144" alt="cat energy" width="140" height="144"></a>
-        <div class="main-offer__item-info">
-          <a href="#" class="main-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy Slim 500 г</a>
-          <table class="main-offer__title-structure">
+    <li class="catalog-offer__item">
+      <div class="catalog-offer__item-wrapper">
+        <a class="catalog-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="img/rice-small-mobile@1x.jpg" alt="cat energy" width="140" height="144"></a>
+        <div class="catalog-offer__item-info">
+          <a href="#" class="catalog-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy Slim 500 г</a>
+          <table class="catalog-offer__title-structure">
             <tr>
               <th>Объем</th>
               <td>500 г</td>
@@ -188,21 +189,21 @@
           </table>
         </div>
       </div>
-      <a class="main-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      <a class="catalog-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
     </li>
-    <li class="main-offer__item main__item--show-all">
-      <div class="main-offer__show-all-wrapper">
-        <img class="main-offer__img-show-all" src="https://via.placeholder.com/31x31" alt="Плюс">
-        <h2 class="main-offer__item-title">Показать еще 100500 товаров</h2>
-        <p class="main-offer__text-show-all">На самом деле вкусов гораздо больше!</p>
+    <li class="catalog-offer__item main__item--show-all">
+      <div class="catalog-offer__show-all-wrapper">
+        <img class="catalog-offer__img-show-all" src="img/icon-plus-mobile.svg" alt="Плюс" width="31" height="31">
+        <h2 class="catalog-offer__item-title">Показать еще 100500 товаров</h2>
+        <p class="catalog-offer__text-show-all">На самом деле вкусов гораздо больше!</p>
       </div>
-      <a class="main-offer__button main-offer__button--show-all" aria-label="Кнопка просмотра всего каталога" href="#">Показать все</a>
+      <a class="catalog-offer__button main-offer__button--show-all" aria-label="Кнопка просмотра всего каталога" href="#">Показать все</a>
     </li>
   </ul>
   </section>
 
   <!--  Блок «Дополнительные товары»-->
-  <section class="extra-offer">
+  <section class="container extra-offer">
     <h2 class="extra-offer__title">Дополнительные товары</h2>
     <div class="extra-offer__line"></div>     <!--  Декоративную линию предполагаю делать дивом-->
     <ul class="extra-offer__items-list">
@@ -244,35 +245,36 @@
   </section>
 
   <!--  Блок «Чехол в подарок». Для section потом применю бэкграунд-->
-  <section class="gift-block">
-      <img class="gift-block__img" src="https://via.placeholder.com/56x61" alt="Подарок" width="56" height="61">
+  <section class="container gift-block">
+      <img class="gift-block__img" src="img/icon-gift.svg" alt="Подарок" width="56" height="61">
       <p class="gift-block__text">Закажите все и получите чехол для кота в подарок!</p>
   </section>
 
   <!--    Блок  карта-->
   <section class="main-map">
-    <div class="main-map__wrapper">
+    <div class="main-map__wrapper main-map__wrapper--catalog">
+      <div class="container main-map__wrapper-text">
       <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <span class="main-map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
-      <iframe src=""></iframe>
-      <img class="main-map__anchor" src="https://via.placeholder.com/55x53" alt="Якорь на карте">
+      <p class="main-map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+    </div>
+    <div class="main-map__map-img">
+      <img class="main-map__anchor" src="img/map-pin.png" alt="Якорь на карте" width="55" height="53">
     </div>
   </section>
 </main>
 
-  <!--    Футер-->
+<!--    Футер-->
 <footer class="footer">
-  <div class="footer__logo-wrapper">
-    <img src="https://via.placeholder.com/128x24" alt="Логотип cat energy" width="128" height="24">
-  </div>
-  <ul class="footer__social-list">
-    <li class="footer__social-item"><a href="#"><img src="https://via.placeholder.com/22x12" alt="Логотип Вконтакте" width="22" height="12"></a></li>
-    <li class="footer__social-item"><a href="#"><img src="https://via.placeholder.com/17x17" alt="Логотиа Инстаграм" width="17" height="17"></a></li>
-    <li class="footer__social-item"><a href="#"><img src="https://via.placeholder.com/10x19" alt="Логотип Facebookz" width="10" height="19"></a></li>
+  <img class="container footer__logo" src="img/logo-footer.svg" alt="Логотип cat energy" width="128" height="24">
+  <ul class="container footer__social-list">
+    <li class="footer__social-item"><a href="#"><img src="img/icon-vk.svg" alt="Логотип Вконтакте" width="22" height="12"></a></li>
+    <li class="footer__social-item"><a href="#"><img src="img/icon-insta.svg" alt="Логотиа Инстаграм" width="23" height="23"></a></li>
+    <li class="footer__social-item"><a href="#"><img src="img/icon-fb.svg" alt="Логотип Facebook" width="10" height="19"></a></li>
   </ul>
-  <div class="footer__author">
-    <span class="footer__author-text"></span>
-    <img class="footer__author-logo" src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy" width="27" height="34">
+  <div class="container footer__author">
+    <p class="footer__author-text">HTML Academy</p>
+    <img class="footer__author-logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
   </div>
 </footer>
 </body>

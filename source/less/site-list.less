@@ -13,3 +13,23 @@
   padding: 0;
   margin: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    border-bottom: none;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.39;
+  }
+
+  .site-list__item--current {
+    border-bottom: solid 2px #68b738;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+}

@@ -10,3 +10,35 @@
   border: none;
   outline: none;
 }
+
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .main-nav {
+    width: 450px;
+  }
+
+  .main-header {
+    flex-wrap: nowrap;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    justify-content: space-between;
+  }
+
+  .main-nav {
+    margin: 0;
+  }
+}

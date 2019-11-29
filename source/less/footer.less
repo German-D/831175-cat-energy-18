@@ -29,15 +29,44 @@
   line-height: 1;
   letter-spacing: normal;
   text-align: left;
-  color: #444444;
+  color: #666666;
 }
 
 .footer__logo {
-  display: flex;
+  display: block;
   border-bottom: 1px solid #cdcdcd;
   padding-bottom: 30px;
 }
 
-.footer__author-logo {
-  opacity: 0.5;
+@media (min-width: @tablet-width) {
+
+
+  .footer__wrapper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__author,
+  .footer__logo {
+    border: none;
+  }
+
+  .footer__author {
+    width: 150px;
+    margin-right: 0;
+    padding-top: 0;
+  }
+
+  .footer__logo {
+    width: 120px;
+    margin-left: 0;
+  }
+
+  .footer__social-list {
+    padding-top: 0;
+  }
+
 }
+
+

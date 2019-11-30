@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи: Подбор программы</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -18,8 +19,8 @@
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a href="index.html" aria-label="Ссылка на Главную">Главная</a></li>
-        <li class="site-list__item"><a href="#" aria-label="Ссылка на Каталог продукции">Каталог продукции</a></li>
-        <li class="site-list__item"><a href="form.html" aria-label="Ссылка на страницу подбора программ">Подбор программы</a></li>
+        <li class="site-list__item"><a href="catalog.html" aria-label="Ссылка на Каталог продукции">Каталог продукции</a></li>
+        <li class="site-list__item site-list__item--current"><a href="#" aria-label="Ссылка на страницу подбора программ">Подбор программы</a></li>
       </ul>
     </div>
   </nav>
@@ -137,17 +138,17 @@
     </li>
   </ul>
 </fieldset>
+    <div class="form-offer__wrapper-order">
     <a class="form-offer__button" aria-label="Кнопка заказа" href="#">Отправить заявку</a>
     <p class="main-offer__required"><sup>*</sup> — Обязательные поля</p>
+    </div>
   </form>
 
   <!--    Блок  карта-->
   <section class="main-map">
     <div class="main-map__wrapper main-map__wrapper--catalog">
-      <div class="container main-map__wrapper-text">
-        <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="main-map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
+      <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="main-map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </div>
     <div class="main-map__map-img">
       <img class="main-map__anchor" src="img/map-pin.png" alt="Якорь на карте" width="55" height="53">
@@ -157,15 +158,17 @@
 
 <!--    Футер-->
 <footer class="footer">
-  <img class="container footer__logo" src="img/logo-footer.svg" alt="Логотип cat energy" width="128" height="24">
-  <ul class="container footer__social-list">
-    <li class="footer__social-item"><a href="#"><img src="img/icon-vk.svg" alt="Логотип Вконтакте" width="22" height="12"></a></li>
-    <li class="footer__social-item"><a href="#"><img src="img/icon-insta.svg" alt="Логотиа Инстаграм" width="23" height="23"></a></li>
-    <li class="footer__social-item"><a href="#"><img src="img/icon-fb.svg" alt="Логотип Facebook" width="10" height="19"></a></li>
-  </ul>
-  <div class="container footer__author">
-    <p class="footer__author-text">HTML Academy</p>
-    <img class="footer__author-logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
+  <div class="footer__wrapper-container container">
+    <img class="container footer__logo" src="img/logo-footer.svg" alt="Логотип cat energy" width="128" height="24">
+    <ul class="container footer__social-list">
+      <li class="footer__social-item"><a href="#"><img src="img/icon-vk.svg" alt="Логотип Вконтакте" width="22" height="12"></a></li>
+      <li class="footer__social-item"><a href="#"><img src="img/icon-insta.svg" alt="Логотиа Инстаграм" width="23" height="23"></a></li>
+      <li class="footer__social-item"><a href="#"><img src="img/icon-fb.svg" alt="Логотип Facebook" width="10" height="19"></a></li>
+    </ul>
+    <div class="container footer__author">
+      <p class="footer__author-text">HTML Academy</p>
+      <img class="footer__author-logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
+    </div>
   </div>
 </footer>
 </body>

@@ -1,3 +1,8 @@
+.extra-offer {
+  position: relative;
+  margin-bottom: 40px;
+}
+
 .extra-offer__title {
   font-size: 24px;
   font-weight: normal;
@@ -6,7 +11,13 @@
   color: #111111;
   border-bottom: 1px solid #ededed;
   padding-bottom: 30px;
+
+
+  &--title-extra {
+    border-bottom: 1px solid #bebebe;
+  }
 }
+
 
 .extra-offer__items-list {
   padding: 0;
@@ -15,6 +26,10 @@
 
 .extra-offer__item {
   border-bottom: 1px solid #ededed;
+
+  &--extra {
+    border-bottom: 1px solid #bebebe;
+  }
 }
 
 .extra-offer__item-title {
@@ -56,6 +71,15 @@
   color: #ffffff;
   margin-bottom: 25px;
   margin-top: 14px;
+}
+
+.extra-offer__line {
+  width: 100px;
+  height: 3px;
+  background-color: #68b738;
+  position: absolute;
+  top: 2%;
+  left: 91%;
 }
 
 @media (min-width: @tablet-width) {

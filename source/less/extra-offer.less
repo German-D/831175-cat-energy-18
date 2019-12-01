@@ -21,7 +21,7 @@
 
 .extra-offer__items-list {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .extra-offer__item {
@@ -99,6 +99,7 @@
     width: 633px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 16px;
   }
 
   .extra-offer__item-name {
@@ -107,16 +108,41 @@
 
   .extra-offer__title {
     border-bottom: none;
+    font-size: 36px;
+    position: absolute;
+    top: -4%;
+    left: 21%;
+    background-color: white;
+    width: 340px;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 
   .extra-offer__items-list {
-    margin-bottom: 70px;
+    margin: 0 auto;
+  }
+
+  .extra-offer__line {
+    position: static;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: auto;
+  }
+
+  .extra-offer__item-title {
+    font-size: 20px;
+  }
+
+  .extra-offer__wrapper-price {
+    font-size: 16px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .extra-offer__items-list {
     width: 800px;
+    margin: 0 auto;
+    padding-right: 350px;
   }
 
   .extra-offer__item {
@@ -134,5 +160,22 @@
   .extra-offer__item-wrapper {
     padding-left: 0;
     width: 600px;
+  }
+
+  .extra-offer__line {
+    position: static;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: auto;
+  }
+
+  .extra-offer__title {
+    position: absolute;
+    top: -4%;
+    left: 7%;
+    background-color: white;
+    width: 227px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }

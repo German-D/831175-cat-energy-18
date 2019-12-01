@@ -83,10 +83,10 @@
     </fieldset>
 
     <!--       Блок «Контактные данные»-->
-    <fieldset class="container form-offer__contacts">
-      <legend class="form-offer__legend">Контактные данные (владельца кота)</legend>
+    <fieldset class="form-offer__contacts">
+      <legend class="container form-offer__legend">Контактные данные (владельца кота)</legend>
       <div class="form-offer__line"></div>
-      <ul class="form-offer__contact-list">  <!--  Декоративную линию предполагаю делать дивом-->
+      <ul class="container form-offer__contact-list">  <!--  Декоративную линию предполагаю делать дивом-->
         <li class="form-offer__contact-item">
           <label class="form-offer__label" for="input-email">E-mail:<sup>*</sup></label> <!-- Иконки бэкграундом в CSS добавлю-->
           <input class="form-offer__input form-offer__input--email" id="input-email" type="email" name="input-email" placeholder="kuklachev@gmail.com">
@@ -99,17 +99,17 @@
     </fieldset>
 
     <!--       Блок «Комментарий»-->
-    <fieldset class="container form-offer__comments">
-      <legend class="form-offer__legend">Комментарий</legend>
+    <fieldset class="form-offer__comments">
+      <legend class="container form-offer__legend form-offer__legend--comments">Комментарий</legend>
       <div class="form-offer__line form-offer__line--comments"></div>  <!--  Декоративную линию предполагаю делать дивом-->
-      <textarea class="form-offer__textarea" name="text" id="comments" cols="44" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <textarea class="container form-offer__textarea" name="text" id="comments" cols="44" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
     </fieldset>
 
     <!--       Блок «Дополнительно»-->
-<fieldset class="container container form-offer__additional">
-  <legend class="form-offer__legend">Дополнительно</legend>
+<fieldset class="form-offer__additional">
+  <legend class="container form-offer__legend form-offer__legend--additional">Дополнительно</legend>
   <div class="form-offer__line form-offer__line--additional"></div>  <!--  Декоративную линию предполагаю делать дивом-->
-  <ul class="form-offer__checkboxes-list">
+  <ul class="container form-offer__checkboxes-list">
     <li class="form-offer__checkbox-item">
       <input class="visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
       <label class="form-offer__label-checkbox" for="sugar">

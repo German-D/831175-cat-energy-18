@@ -77,6 +77,7 @@
 .form-offer__radio-list {
   padding: 0;
   margin: 0;
+  padding-left: 30px;
 }
 
 .form-offer__img {
@@ -129,7 +130,7 @@
 
 .form-offer__contact-list {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .form-offer__contact-item {
@@ -151,7 +152,7 @@
 
 .form-offer__checkboxes-list {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .form-offer__checkbox-img {
@@ -209,6 +210,7 @@
   outline: none;
   padding-left: 17px;
   padding-top: 17px;
+  display: block;
 }
 
 .form-offer__line {
@@ -249,6 +251,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 420px;
+    margin: 0 auto;
   }
 
   .form-offer__checkbox-item {
@@ -288,15 +291,44 @@
   }
 
   .form-offer__line {
-    left: 51%;
+    position: static;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: auto;
 
     &--comments {
-      left: 21%;
+      width: auto;
+      left: 13%;
     }
 
     &--additional {
-      left: 24%;
+      width: auto;
+      left: 15%;
     }
+  }
+
+  .form-offer__legend {
+    position: absolute;
+    top: 19%;
+    left: 7%;
+    background-color: white;
+    width: 343px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    &--comments {
+      top: 15%;
+      width: 110px;
+    }
+
+    &--additional {
+      top: 18%;
+      width: 130px;
+    }
+  }
+
+  .form-offer__contact-list {
+    margin: 0 auto;
   }
 }
 
@@ -322,6 +354,7 @@
   .form-offer__contact-list {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
   }
 
   .form-offer__input {
@@ -329,9 +362,8 @@
   }
 
   .form-offer__checkboxes-list {
-    width: auto;
-    margin-right: 100px;
-    margin-left: 100px;
+    width: 1160px;
+    margin: 0 auto;
   }
 
   .form-offer__input-item {
@@ -342,15 +374,15 @@
     width: auto;
   }
 
-  .form-offer__line {
-    left: 32%;
+  .form-offer__legend {
+    top: 25%;
 
     &--comments {
-      left: 13%;
+      top: 15%;
     }
 
     &--additional {
-      left: 15%;
+      top: 24%;
     }
   }
 }

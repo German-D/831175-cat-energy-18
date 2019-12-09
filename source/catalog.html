@@ -222,10 +222,11 @@
   </section>
 
   <!--  Блок «Дополнительные товары»-->
-  <section class="extra-offer">
-    <h2 class="container extra-offer__title extra-offer__title--title-extra">Дополнительные товары</h2>
+  <section class="container extra-offer">
+    <h2 class="extra-offer__title">Дополнительные товары</h2>
     <div class="extra-offer__line"></div>     <!--  Декоративную линию предполагаю делать дивом-->
-    <ul class="container extra-offer__items-list">
+    <div class="extra-offer__wrapper-content">
+    <ul class="extra-offer__items-list">
       <li class="extra-offer__item extra-offer__item--extra">
         <div class="extra-offer__item-wrapper">
           <h3 class="extra-offer__item-title">Сахарозаменитель</h3>
@@ -267,21 +268,23 @@
         <a class="extra-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
       </li>
     </ul>
-  </section>
-
-  <!--  Блок «Чехол в подарок»-->
-  <section class="container gift-block">
-      <img class="gift-block__img" src="img/icon-gift.svg" alt="Подарок" width="56" height="61">
-      <p class="gift-block__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+    <!--  Блок «Чехол в подарок»-->
+    <div class="extra-offer__gift-block">
+      <img class="extra-offer__gift-block__img" src="img/icon-gift.svg" alt="Подарок" width="56" height="61">
+      <p class="extra-offer__gift-block__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+    </div>
+    </div>
   </section>
 
   <!--    Блок  карта-->
   <section class="main-map">
-    <div class="container main-map__wrapper">
-      <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="main-map__text">
-        <span class="main-map__text-street">ул. Большая Конюшенная, д. 19/8</span>
-        <span class="main-map__text-city">Санкт-Петербург</span></p>
+    <div class="main-map__wrapper-background">
+      <div class="container main-map__wrapper">
+        <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="main-map__text">
+          <span class="main-map__text-street">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="main-map__text-city">Санкт-Петербург</span></p>
+      </div>
     </div>
     <div class="main-map__map-img">
       <img class="main-map__anchor" src="img/map-pin.png" alt="Якорь на карте" width="55" height="53">

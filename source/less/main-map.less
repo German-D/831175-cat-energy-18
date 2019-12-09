@@ -69,8 +69,12 @@
     margin-top: 0;
   }
 
-  .main-map__wrapper--background {
+  .main-map__wrapper-background {
     background-color: #f2f2f2;
+
+    &--white {
+      background-color: white;
+    }
   }
 
   .main-map__anchor {
@@ -81,6 +85,7 @@
 
   .main-map__wrapper {
     padding-bottom: 20px;
+    margin-top: 0;
   }
 
   .main-map__text-city {
@@ -97,7 +102,7 @@
   .main-map__wrapper {
     position: absolute;
     top: 47px;
-    left: 133px;
+    left: 9%;
     z-index: 999;
     background-color: white;
     width: 400px;
@@ -112,5 +117,9 @@
 
   .main-map__map-img {
     background: url("../img/bg-map-desktop@1x.png");
+  }
+
+  .main-map__wrapper-background--white {
+    padding-top: 0;
   }
 }

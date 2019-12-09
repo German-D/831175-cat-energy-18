@@ -34,8 +34,10 @@
     <div class="container form-offer__title-wrapper">
     <h2 class="form-offer__title">Заполните анкету и мы подберем программу питания для вашего кота</h2>
     </div>
+
+    <section class="container form-offer__data">
     <!--       Блок «Имя Вес Возраст»-->
-    <ul class="container form-offer__input-list">
+    <ul class="form-offer__input-list">
       <li class="form-offer__input-item">
       <label class="form-offer__label" for="input-name">Имя:<sup>*</sup></label>
       <input class="form-offer__input" id="input-name" type="text" name="input-name" placeholder="БАРСИК">
@@ -81,10 +83,13 @@
         </ul>
       </div>
     </fieldset>
+    </section>
 
     <!--       Блок «Контактные данные»-->
     <fieldset class="form-offer__contacts">
+      <div class="container form-offer__legend-wrapper">
       <legend class="container form-offer__legend">Контактные данные (владельца кота)</legend>
+      </div>
       <div class="form-offer__line"></div>
       <ul class="container form-offer__contact-list">  <!--  Декоративную линию предполагаю делать дивом-->
         <li class="form-offer__contact-item">
@@ -100,14 +105,18 @@
 
     <!--       Блок «Комментарий»-->
     <fieldset class="form-offer__comments">
+      <div class="container form-offer__legend-wrapper">
       <legend class="container form-offer__legend form-offer__legend--comments">Комментарий</legend>
+      </div>
       <div class="form-offer__line form-offer__line--comments"></div>  <!--  Декоративную линию предполагаю делать дивом-->
       <textarea class="container form-offer__textarea" name="text" id="comments" cols="44" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
     </fieldset>
 
     <!--       Блок «Дополнительно»-->
 <fieldset class="form-offer__additional">
+  <div class="container form-offer__legend-wrapper">
   <legend class="container form-offer__legend form-offer__legend--additional">Дополнительно</legend>
+  </div>
   <div class="form-offer__line form-offer__line--additional"></div>  <!--  Декоративную линию предполагаю делать дивом-->
   <ul class="container form-offer__checkboxes-list">
     <li class="form-offer__checkbox-item">
@@ -152,11 +161,13 @@
 
   <!--    Блок  карта-->
   <section class="main-map">
-    <div class="container main-map__wrapper">
-      <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="main-map__text">
-        <span class="main-map__text-street">ул. Большая Конюшенная, д. 19/8</span>
-        <span class="main-map__text-city">Санкт-Петербург</span></p>
+    <div class="main-map__wrapper-background">
+      <div class="container main-map__wrapper">
+        <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="main-map__text">
+          <span class="main-map__text-street">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="main-map__text-city">Санкт-Петербург</span></p>
+      </div>
     </div>
     <div class="main-map__map-img">
       <img class="main-map__anchor" src="img/map-pin.png" alt="Якорь на карте" width="55" height="53">

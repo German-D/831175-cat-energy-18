@@ -126,6 +126,18 @@
   text-align: left;
   color: #111111;
   margin-bottom: 25px;
+  z-index: 999;
+  position: relative;
+  background-color: white;
+  width: 200px;
+
+  &--comments {
+    width: 135px;
+  }
+
+  &--additional {
+    width: 160px;
+  }
 }
 
 .form-offer__contact-list {
@@ -138,7 +150,6 @@
   display: flex;
   align-items: center;
 }
-
 
 .form-offer__comments {
   border: none;
@@ -218,7 +229,8 @@
   height: 3px;
   background-color: #68b738;
   position: absolute;
-  top: -18%;
+  top: 10%;
+  left: 50%;
 }
 
 @media (min-width: @tablet-width) {
@@ -287,6 +299,8 @@
     margin-top: 50px;
     margin-bottom: 50px;
     width: 100%;
+    left: auto;
+    top: -30px;
   }
 
   .form-offer__legend {
@@ -294,6 +308,9 @@
     width: 343px;
     padding-left: 35px;
     padding-right: 35px;
+    margin-left: -35px;
+    position: relative;
+    z-index: 999;
 
     &--comments {
       top: 15%;

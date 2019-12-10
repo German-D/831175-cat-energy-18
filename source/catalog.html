@@ -11,11 +11,11 @@
   <a href="index.html" class="main-header__logo">
     <img src="img/logo-mobile.svg" alt="Логотип" width="191" height="39">
   </a>
-  <button class="main-nav__toggle" type="button">
-    <img class="visually-hidden" src="img/icon-mobile-menu.svg" alt="Меню-бургер" width="25" height="19">
-    <img src="img/icon-close.svg" alt="Закрыть" width="16" height="16">
-  </button>
-  <nav class="container main-nav">
+  <nav class="container main-nav main-nav--closed main-nav--nojs">
+    <button class="main-nav__toggle" type="button">
+      <img class="main-nav__burger" src="img/icon-mobile-menu.svg" alt="Меню-бургер" width="25" height="19">
+      <img class="main-nav_close" src="img/icon-close.svg" alt="Закрыть" width="16" height="16">
+    </button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a href="index.html" aria-label="Ссылка на Главную">Главная</a></li>
@@ -28,11 +28,14 @@
 <main class="main">
 
 <!--   Блок «Каталог продукции» -->
-  <section class="container catalog-offer">
-  <h1 class="catalog-offer__title">Каталог продукции</h1>
+  <section class="catalog-offer">
+    <div class="catalog-offer__wrapper-title">
+  <h1 class="container catalog-offer__title">Каталог продукции</h1>
+    </div>
   <ul class="catalog-offer__list">
     <li class="catalog-offer__item">
-      <div class="catalog-offer__item-wrapper">
+      <div class="catalog-offer__item-wrapper-border container">
+        <div class="catalog-offer__item-wrapper">
         <a class="catalog-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="img/chicken-small-mobile@1x.jpg" alt="cat energy" width="140" height="144"></a>
         <div class="catalog-offer__item-info">
           <a href="#" class="catalog-offer__link-title" aria-label="Ссылка на описание товара">Cat Energy PRO 500 г</a>
@@ -51,10 +54,12 @@
             </tr>
           </table>
         </div>
-      </div>
+        </div>
       <a class="catalog-offer__button" aria-label="Кнопка заказа" href="#">заказать</a>
+      </div>
     </li>
     <li class="catalog-offer__item">
+      <div class="catalog-offer__item-wrapper-border container">
       <div class="catalog-offer__item-wrapper">
         <a class="catalog-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="img/chicken-big-mobile@1x.jpg" alt="cat energy" width="140" height="144"></a>
         <div class="catalog-offer__item-info">
@@ -76,8 +81,10 @@
         </div>
       </div>
       <a class="catalog-offer__button" aria-label="Кнопка заказа" href="#"> Заказать</a>
+      </div>
     </li>
     <li class="catalog-offer__item">
+      <div class="catalog-offer__item-wrapper-border container">
       <div class="catalog-offer__item-wrapper">
         <a class="catalog-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="img/fish-small-mobile@1x.jpg" alt="cat energy" width="140" height="144"></a>
         <div class="catalog-offer__item-info">
@@ -99,8 +106,10 @@
         </div>
       </div>
       <a class="catalog-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      </div>
     </li>
     <li class="catalog-offer__item">
+      <div class="catalog-offer__item-wrapper-border container">
       <div class="catalog-offer__item-wrapper">
         <a class="catalog-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="img/fish-small-mobile@1x.jpg" alt="cat energy" width="140" height="144"></a>
         <div class="catalog-offer__item-info">
@@ -122,8 +131,10 @@
         </div>
       </div>
       <a class="catalog-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      </div>
     </li>
     <li class="catalog-offer__item">
+      <div class="catalog-offer__item-wrapper-border container">
       <div class="catalog-offer__item-wrapper">
         <a class="catalog-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="img/buckwheat-small-mobile@1x.jpg" alt="cat energy" width="140" height="144"></a>
         <div class="catalog-offer__item-info">
@@ -145,8 +156,10 @@
         </div>
       </div>
       <a class="catalog-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      </div>
     </li>
     <li class="catalog-offer__item">
+      <div class="catalog-offer__item-wrapper-border container">
       <div class="catalog-offer__item-wrapper">
         <a class="catalog-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="img/buckwheat-big-mobile@1x.jpg" alt="cat energy" width="140" height="144"></a>
         <div class="catalog-offer__item-info">
@@ -168,8 +181,10 @@
         </div>
       </div>
       <a class="catalog-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      </div>
     </li>
     <li class="catalog-offer__item">
+      <div class="catalog-offer__item-wrapper-border container">
       <div class="catalog-offer__item-wrapper">
         <a class="catalog-offer__img-link" href="#" aria-label="Ссылка на описание товара"><img class="main-offer__item-img" src="img/rice-small-mobile@1x.jpg" alt="cat energy" width="140" height="144"></a>
         <div class="catalog-offer__item-info">
@@ -191,14 +206,17 @@
         </div>
       </div>
       <a class="catalog-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
+      </div>
     </li>
     <li class="catalog-offer__item main__item--show-all">
+      <div class="catalog-offer__item-wrapper-border container">
       <div class="catalog-offer__show-all-wrapper">
         <img class="catalog-offer__img-show-all" src="img/icon-plus-mobile.svg" alt="Плюс" width="31" height="31">
         <h2 class="catalog-offer__item-title">Показать еще 100500&nbsp;товаров</h2>
         <p class="catalog-offer__text-show-all">На самом деле вкусов гораздо&nbsp;больше!</p>
       </div>
       <a class="catalog-offer__button main-offer__button--show-all" aria-label="Кнопка просмотра всего каталога" href="#">Показать все</a>
+      </div>
     </li>
   </ul>
   </section>
@@ -207,8 +225,9 @@
   <section class="container extra-offer">
     <h2 class="extra-offer__title">Дополнительные товары</h2>
     <div class="extra-offer__line"></div>     <!--  Декоративную линию предполагаю делать дивом-->
+    <div class="extra-offer__wrapper-content">
     <ul class="extra-offer__items-list">
-      <li class="extra-offer__item">
+      <li class="extra-offer__item extra-offer__item--extra">
         <div class="extra-offer__item-wrapper">
           <h3 class="extra-offer__item-title">Сахарозаменитель</h3>
           <div class="extra-offer__wrapper-price">
@@ -218,7 +237,7 @@
         </div>
         <a class="extra-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
       </li>
-      <li class="extra-offer__item">
+      <li class="extra-offer__item extra-offer__item--extra">
         <div class="extra-offer__item-wrapper">
         <h3 class="extra-offer__item-title">Питьевая вода</h3>
         <div class="extra-offer__wrapper-price">
@@ -228,7 +247,7 @@
         </div>
         <a class="extra-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
       </li>
-      <li class="extra-offer__item">
+      <li class="extra-offer__item extra-offer__item--extra">
         <div class="extra-offer__item-wrapper">
         <h3 class="extra-offer__item-title">Молоко</h3>
         <div class="extra-offer__wrapper-price">
@@ -238,7 +257,7 @@
         </div>
         <a class="extra-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
       </li>
-      <li class="extra-offer__item">
+      <li class="extra-offer__item extra-offer__item--extra">
         <div class="extra-offer__item-wrapper">
         <h3 class="extra-offer__item-title">Витамины</h3>
         <div class="extra-offer__wrapper-price">
@@ -249,19 +268,23 @@
         <a class="extra-offer__button" aria-label="Кнопка заказа" href="#">Заказать</a>
       </li>
     </ul>
-  </section>
-
-  <!--  Блок «Чехол в подарок»-->
-  <section class="container gift-block">
-      <img class="gift-block__img" src="img/icon-gift.svg" alt="Подарок" width="56" height="61">
-      <p class="gift-block__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+    <!--  Блок «Чехол в подарок»-->
+    <div class="extra-offer__gift-block">
+      <img class="extra-offer__gift-block__img" src="img/icon-gift.svg" alt="Подарок" width="56" height="61">
+      <p class="extra-offer__gift-block__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+    </div>
+    </div>
   </section>
 
   <!--    Блок  карта-->
   <section class="main-map">
-    <div class="main-map__wrapper main-map__wrapper--catalog">
-      <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="main-map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <div class="main-map__wrapper-background">
+      <div class="container main-map__wrapper">
+        <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="main-map__text">
+          <span class="main-map__text-street">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="main-map__text-city">Санкт-Петербург</span></p>
+      </div>
     </div>
     <div class="main-map__map-img">
       <img class="main-map__anchor" src="img/map-pin.png" alt="Якорь на карте" width="55" height="53">
@@ -275,7 +298,7 @@
     <img class="container footer__logo" src="img/logo-footer.svg" alt="Логотип cat energy" width="128" height="24">
     <ul class="container footer__social-list">
       <li class="footer__social-item"><a href="#"><img src="img/icon-vk.svg" alt="Логотип Вконтакте" width="22" height="12"></a></li>
-      <li class="footer__social-item"><a href="#"><img src="img/icon-insta.svg" alt="Логотиа Инстаграм" width="23" height="23"></a></li>
+      <li class="footer__social-item"><a href="#"><img src="img/icon-insta.svg" alt="Логотиа Инстаграм" width="17" height="17"></a></li>
       <li class="footer__social-item"><a href="#"><img src="img/icon-fb.svg" alt="Логотип Facebook" width="10" height="19"></a></li>
     </ul>
     <div class="container footer__author">
@@ -285,4 +308,5 @@
   </div>
 </footer>
 </body>
+<script src="js/app.js"></script>
 </html>

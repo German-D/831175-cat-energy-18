@@ -11,11 +11,11 @@
   <a href="index.html" class="main-header__logo">
     <img src="img/logo-mobile.svg" alt="Логотип" width="191" height="39">
   </a>
-  <button class="main-nav__toggle" type="button">
-    <img class="visually-hidden" src="img/icon-mobile-menu.svg" alt="Меню-бургер" width="25" height="19">
-    <img src="img/icon-close.svg" alt="Закрыть" width="16" height="16">
-  </button>
-  <nav class="container main-nav">
+  <nav class="container main-nav main-nav--closed main-nav--nojs">
+    <button class="main-nav__toggle" type="button">
+      <img class="main-nav__burger" src="img/icon-mobile-menu.svg" alt="Меню-бургер" width="25" height="19">
+      <img class="main-nav_close" src="img/icon-close.svg" alt="Закрыть" width="16" height="16">
+    </button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a href="index.html" aria-label="Ссылка на Главную">Главная</a></li>
@@ -26,11 +26,16 @@
   </nav>
 </header>
 <main class="main-form">
+  <div class="main-form__page-title-wrapper">
   <h1 class="container main-form__page-title">Подбор программы</h1>
-  <form class="container form-offer" method="get"
+  </div>
+  <form class="form-offer" method="get"
         action="https://echo.htmlacademy.ru">
+    <div class="container form-offer__title-wrapper">
     <h2 class="form-offer__title">Заполните анкету и мы подберем программу питания для вашего кота</h2>
+    </div>
 
+    <section class="container form-offer__data">
     <!--       Блок «Имя Вес Возраст»-->
     <ul class="form-offer__input-list">
       <li class="form-offer__input-item">
@@ -49,7 +54,8 @@
 
     <!--       Блок «Похудение-масса-совет»-->
     <fieldset class="form-offer__checkboxes">
-      <ul class="form-offer__radio-list">
+      <div class="container form-offer__checkboxes-wrapper">
+        <ul class="form-offer__radio-list">
         <li class="form-offer__radio-item">
           <input class="visually-hidden" type="radio" name="diet" id="diet" checked>
           <label class="form-offer__label-radio" for="diet">
@@ -68,42 +74,51 @@
         </li>
         <li class="form-offer__radio-item">
           <input class="visually-hidden" type="radio" name="advice" id="advice">
-          <label class="form-offer__label-radio" for="advice"></div>
+          <label class="form-offer__label-radio" for="advice">
             <div class="form-offer__img"></div>
             <div class="form-offer__img--on visually-hidden"></div>
             <span class="form-offer__text">Не знаю (Нужен ваш совет)</span>
           </label>
         </li>
-      </ul>
+        </ul>
+      </div>
     </fieldset>
+    </section>
 
     <!--       Блок «Контактные данные»-->
     <fieldset class="form-offer__contacts">
+      <div class="container form-offer__legend-wrapper">
       <legend class="form-offer__legend">Контактные данные (владельца кота)</legend>
+      </div>
       <div class="form-offer__line"></div>
-      <ul class="form-offer__contact-list">  <!--  Декоративную линию предполагаю делать дивом-->
+      <ul class="container form-offer__contact-list">  <!--  Декоративную линию предполагаю делать дивом-->
         <li class="form-offer__contact-item">
           <label class="form-offer__label" for="input-email">E-mail:<sup>*</sup></label> <!-- Иконки бэкграундом в CSS добавлю-->
-          <input class="form-offer__input" id="input-email" type="email" name="input-email" placeholder="kuklachev@gmail.com">
+          <input class="form-offer__input form-offer__input--email" id="input-email" type="email" name="input-email" placeholder="kuklachev@gmail.com">
         </li>
         <li class="form-offer__contact-item">
           <label class="form-offer__label" for="input-email">Телефон:<sup>*</sup></label>
-          <input class="form-offer__input" id="input-phone" type="tel" name="input-phone" placeholder="8(960)900-60-90">
+          <input class="form-offer__input form-offer__input--phone" id="input-phone" type="tel" name="input-phone" placeholder="8(960)900-60-90">
         </li>
       </ul>
     </fieldset>
 
     <!--       Блок «Комментарий»-->
     <fieldset class="form-offer__comments">
-      <legend class="form-offer__legend">Комментарий</legend>
-      <div class="form-offer__line"></div>  <!--  Декоративную линию предполагаю делать дивом-->
-      <textarea class="form-offer__textarea" name="text" id="comments" cols="35" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <div class="container form-offer__legend-wrapper">
+      <legend class=" form-offer__legend form-offer__legend--comments">Комментарий</legend>
+      </div>
+      <div class="form-offer__line form-offer__line--comments"></div>  <!--  Декоративную линию предполагаю делать дивом-->
+      <textarea class="container form-offer__textarea" name="text" id="comments" cols="44" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
     </fieldset>
 
     <!--       Блок «Дополнительно»-->
-<fieldset class="container form-offer__additional">
-  <legend class="form-offer__legend">Дополнительно</legend>
-  <ul class="form-offer__checkboxes-list">
+<fieldset class="form-offer__additional">
+  <div class="container form-offer__legend-wrapper">
+  <legend class="form-offer__legend form-offer__legend--additional">Дополнительно</legend>
+  </div>
+  <div class="form-offer__line form-offer__line--additional"></div>  <!--  Декоративную линию предполагаю делать дивом-->
+  <ul class="container form-offer__checkboxes-list">
     <li class="form-offer__checkbox-item">
       <input class="visually-hidden" type="checkbox" name="sugar" id="sugar" checked>
       <label class="form-offer__label-checkbox" for="sugar">
@@ -138,7 +153,7 @@
     </li>
   </ul>
 </fieldset>
-    <div class="form-offer__wrapper-order">
+    <div class="container form-offer__wrapper-order">
     <a class="form-offer__button" aria-label="Кнопка заказа" href="#">Отправить заявку</a>
     <p class="main-offer__required"><sup>*</sup> — Обязательные поля</p>
     </div>
@@ -146,9 +161,13 @@
 
   <!--    Блок  карта-->
   <section class="main-map">
-    <div class="main-map__wrapper main-map__wrapper--catalog">
-      <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="main-map__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <div class="main-map__wrapper-background">
+      <div class="container main-map__wrapper">
+        <h2 class="main-map__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="main-map__text">
+          <span class="main-map__text-street">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="main-map__text-city">Санкт-Петербург</span></p>
+      </div>
     </div>
     <div class="main-map__map-img">
       <img class="main-map__anchor" src="img/map-pin.png" alt="Якорь на карте" width="55" height="53">
@@ -162,7 +181,7 @@
     <img class="container footer__logo" src="img/logo-footer.svg" alt="Логотип cat energy" width="128" height="24">
     <ul class="container footer__social-list">
       <li class="footer__social-item"><a href="#"><img src="img/icon-vk.svg" alt="Логотип Вконтакте" width="22" height="12"></a></li>
-      <li class="footer__social-item"><a href="#"><img src="img/icon-insta.svg" alt="Логотиа Инстаграм" width="23" height="23"></a></li>
+      <li class="footer__social-item"><a href="#"><img src="img/icon-insta.svg" alt="Логотиа Инстаграм" width="17" height="17"></a></li>
       <li class="footer__social-item"><a href="#"><img src="img/icon-fb.svg" alt="Логотип Facebook" width="10" height="19"></a></li>
     </ul>
     <div class="container footer__author">
@@ -171,5 +190,6 @@
     </div>
   </div>
 </footer>
+<script src="js/app.js"></script>
 </body>
 </html>

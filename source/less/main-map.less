@@ -1,3 +1,7 @@
+.main-map {
+  position: relative;
+}
+
 .main-map__title {
   font-size: 16px;
   font-weight: normal;
@@ -32,13 +36,17 @@
 
 .main-map__anchor {
   position: absolute;
-  top: 128px;
-  left: 46%;
+  top: 232px;
+  left: 45%;
   transform: translate(10px, 10px);
 }
 
 .main-map__wrapper-text {
   display: flex;
+}
+
+.main-map iframe {
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
@@ -80,7 +88,7 @@
   .main-map__anchor {
     width: 113px;
     height: 106px;
-    left: 31%;
+    left: 45%;
   }
 
   .main-map__wrapper {
@@ -113,6 +121,7 @@
     width: 113px;
     height: 106px;
     left: 69%;
+    top: 110px;
   }
 
   .main-map__map-img {
